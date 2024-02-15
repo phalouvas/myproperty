@@ -6,4 +6,6 @@ from frappe.model.document import Document
 
 
 class Fees(Document):
-	pass
+	
+	def before_save(self):
+		self.monthly_fee = self.yearly_fee / 12
