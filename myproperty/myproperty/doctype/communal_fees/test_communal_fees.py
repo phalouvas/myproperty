@@ -5,5 +5,5 @@
 from frappe.tests.utils import FrappeTestCase
 
 
-class TestFees(FrappeTestCase):
+class TestCommunalFees(FrappeTestCase):
 	pass
