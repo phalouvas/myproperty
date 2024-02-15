@@ -1,6 +1,6 @@
 {
  "charts": [],
- "content": "[{\"id\":\"xCc_RAeE9N\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">MyProperty</span>\",\"col\":12}},{\"id\":\"6FKIi9lpL_\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Communal Fees\",\"col\":3}},{\"id\":\"QoldUAC7uU\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Communal Fees Report\",\"col\":3}}]",
+ "content": "[{\"id\":\"xCc_RAeE9N\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">MyProperty</span>\",\"col\":12}},{\"id\":\"6FKIi9lpL_\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Communal Fees\",\"col\":3}},{\"id\":\"QoldUAC7uU\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Communal Fees Report\",\"col\":3}},{\"id\":\"8IYqkIkCHB\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Communal Fees Payments\",\"col\":3}}]",
  "creation": "2024-02-15 08:02:20.393795",
  "custom_blocks": [],
  "docstatus": 0,
@@ -13,7 +13,7 @@
  "is_hidden": 0,
  "label": "MyProperty",
  "links": [],
- "modified": "2024-02-15 08:57:45.337628",
+ "modified": "2024-02-15 10:31:58.269432",
  "modified_by": "Administrator",
  "module": "Myproperty",
  "name": "MyProperty",
@@ -39,6 +39,13 @@
    "label": "Communal Fees Report",
    "type": "URL",
    "url": "/app/query-report/Communal%20Fees"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Communal Fees Payments",
+   "link_to": "Communal Fees Payments",
+   "type": "Report"
   }
  ],
  "title": "MyProperty"
