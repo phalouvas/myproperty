@@ -17,6 +17,12 @@ def get_columns():
 			"options": "Customer",
 			"width": 300,
 		},	
+		{
+			"label": _("Apt"),
+			"fieldtype": "data",
+			"fieldname": "apt",
+			"width": 300,
+		},
 		{"label": _("Monthly"), "fieldtype": "Currency", "fieldname": "monthly_fee", "width": 150},
 		{"label": _("Yearly"), "fieldtype": "Currency", "fieldname": "yearly_fee", "width": 150},
 	]
@@ -25,11 +31,12 @@ def get_columns():
 def get_data(filters):
 	data = []
 	
-	communal_fees = frappe.get_all("Communal Fees", filters, ["customer", "monthly_fee", "yearly_fee"])
+	communal_fees = frappe.get_all("Communal Fees", filters, ["customer", "apt", "monthly_fee", "yearly_fee"])
 	for fee in communal_fees:
 		data.append(
 			{
 				"customer": fee.customer,
+				"apt": fee.apt,
 				"monthly_fee": fee.monthly_fee,
 				"yearly_fee": fee.yearly_fee
 			}
